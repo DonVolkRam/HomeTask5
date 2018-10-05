@@ -31,6 +31,7 @@ namespace Ex5
                 {
                     int Index = Quiz.Chose();
                     Console.WriteLine(Quiz.Question[Index]);
+                    Console.Read();
                 }
             }
             catch
