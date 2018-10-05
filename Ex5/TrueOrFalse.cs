@@ -66,11 +66,14 @@ namespace Ex5
             
             while (Compare)
             {
-                RndIndex = rnd.Next(0, 38);
+                RndIndex = rnd.Next(0, 36);
                 for (int i = 0; i < RandomIndexes.LongCount(); i++)
                 {
                     if (RndIndex == RandomIndexes.ElementAt(i))
+                    {
                         Compare = true;
+                        break;
+                    }
                 }
                 Compare = false;
             }
