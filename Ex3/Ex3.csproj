@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{059EFD3B-D244-4AFD-A38D-846547AB35E4}</ProjectGuid>
+    <ProjectGuid>{CA77FBD2-75B7-46DC-A52E-0FD77944FD01}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HomeTask5</RootNamespace>
-    <AssemblyName>HomeTask5</AssemblyName>
+    <RootNamespace>Ex3</RootNamespace>
+    <AssemblyName>Ex3</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,20 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Permutation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Ex1\Ex1.csproj">
-      <Project>{ba925866-ced2-42b8-a9dd-54f63d1841de}</Project>
-      <Name>Ex1</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Ex1_Users.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

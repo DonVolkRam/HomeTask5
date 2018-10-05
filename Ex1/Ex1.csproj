@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{059EFD3B-D244-4AFD-A38D-846547AB35E4}</ProjectGuid>
+    <ProjectGuid>{BA925866-CED2-42B8-A9DD-54F63D1841DE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HomeTask5</RootNamespace>
-    <AssemblyName>HomeTask5</AssemblyName>
+    <RootNamespace>Ex1</RootNamespace>
+    <AssemblyName>Ex1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,17 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Account.cs" />
+    <Compile Include="ProLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Ex1\Ex1.csproj">
-      <Project>{ba925866-ced2-42b8-a9dd-54f63d1841de}</Project>
-      <Name>Ex1</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Ex1_Users.txt" />
