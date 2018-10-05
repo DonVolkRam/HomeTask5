@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{059EFD3B-D244-4AFD-A38D-846547AB35E4}</ProjectGuid>
+    <ProjectGuid>{3ECB1F30-2348-415C-8DCE-1429468FF2E3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HomeTask5</RootNamespace>
-    <AssemblyName>HomeTask5</AssemblyName>
+    <RootNamespace>Ex5</RootNamespace>
+    <AssemblyName>Ex5</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,20 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrueOrFalse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ex1\Ex1.csproj">
-      <Project>{ba925866-ced2-42b8-a9dd-54f63d1841de}</Project>
-      <Name>Ex1</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Ex1_Users.txt" />
     <Content Include="Ex5_Qwiz.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
