@@ -53,6 +53,18 @@
       <Project>{ba925866-ced2-42b8-a9dd-54f63d1841de}</Project>
       <Name>Ex1</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Ex2\Ex2.csproj">
+      <Project>{10ecb811-f75e-4a51-b990-e26de2eeb8fa}</Project>
+      <Name>Ex2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ex3\Ex3.csproj">
+      <Project>{ca77fbd2-75b7-46dc-a52e-0fd77944fd01}</Project>
+      <Name>Ex3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ex5\Ex5.csproj">
+      <Project>{3ecb1f30-2348-415c-8dce-1429468ff2e3}</Project>
+      <Name>Ex5</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Ex1_Users.txt" />

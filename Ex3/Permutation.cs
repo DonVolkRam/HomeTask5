@@ -15,9 +15,9 @@ using System.Threading.Tasks;
 
 namespace Ex3
 {
-    class Permutation
+    public class Permutation
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string a = "толстые книги в тонких обложках";
             string b = "тонкие книги в толстых обложках";
@@ -40,6 +40,7 @@ namespace Ex3
                 Console.WriteLine("Перестановка отсутствует");
 
             Console.Read();
+            return;
         }
 
         /// <summary>

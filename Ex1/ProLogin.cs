@@ -35,7 +35,7 @@ namespace Ex1
                         Console.Clear();
                         Console.WriteLine("Пара логин и пароль не верна ", tryIndex);
                     }
- 
+
                     do
                     {
                         if (checkL)
@@ -47,7 +47,7 @@ namespace Ex1
                         Console.Write("Введите логин ");
                         login = Convert.ToString(Console.ReadLine());
                     }
-//                    while (checkL = Account.CheckCorrectLoginRegex(login));
+                    //                    while (checkL = Account.CheckCorrectLoginRegex(login));
                     while (checkL = Account.CheckCorrectLogin(login));
 
                     Console.Write("Введите пароль ");
@@ -57,9 +57,15 @@ namespace Ex1
                 }
                 while (!(checkLP = Account.CheckLoginAndPassword(Users, login, password)) && tryIndex > 0);
                 if (checkLP)
+                {
                     Console.WriteLine("Добро пожаловать!");
+                    return;
+                }
                 else
+                {
                     Console.WriteLine("Доступ запрещен!");
+                    return;
+                }
             }
             catch
             {

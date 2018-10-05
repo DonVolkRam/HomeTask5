@@ -15,9 +15,9 @@ using System.Threading.Tasks;
 //Выполнил Волков Кирилл
 namespace Ex2
 {
-    class Message
+    public class Message
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string Message = "В школе нас всех учили писать под диктовку. " +
                 "Но это не имеет никакого отношения к конспектированию лекций. " +
@@ -40,6 +40,7 @@ namespace Ex2
             
             Console.WriteLine("StringBuilder : " + stringBuilder(Message, word));
             Console.Read();
+            return;
         }
 
         /// <summary>

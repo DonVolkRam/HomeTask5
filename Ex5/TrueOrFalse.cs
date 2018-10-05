@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Ex5
 {
 
-    class TrueOrFalse
+    public class TrueOrFalse
     {
         string[] Question;
         string[] Answer;
@@ -19,20 +19,29 @@ namespace Ex5
         public string[] Answer1 { get => Answer; set => Answer = value; }
         public List<int> RandomIndexes1 { get => RandomIndexes; set => RandomIndexes = value; }
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Инициализация базы вопросов");
             try
             {
                 TrueOrFalse Quiz = new TrueOrFalse();
+                int Score = 0;
+                string Answer = "";
                 if (Quiz.Read() == false)
                     throw new Exception("Error load file");
+                Console.WriteLine("Добро подаловать на игру Квиз!\n" +
+                    "Вам предстоит ответить на пять вопросов.\n" +
+                    "Желаю вам удачи!\n");
                 for (int i = 0; i < 5; i++)
                 {
                     int Index = Quiz.Chose();
-                    Console.WriteLine(Quiz.Question[Index]);
-                    Console.Read();
+                    Console.Write(Quiz.Question[Index]);
+                    Answer = Console.ReadLine();
+                    if (Answer.ToLower() == Quiz.Answer[Index].ToLower())
+                        Score++;
+//                    Console.Read();
                 }
+                Console.WriteLine("Вы ответили правильно на " + Score + " вопросов");
             }
             catch
             {
@@ -42,6 +51,7 @@ namespace Ex5
             {
                 Console.Read();
             }
+            return;
         }
 
         /// <summary>
